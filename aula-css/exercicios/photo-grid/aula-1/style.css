@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 992px;
+}
+
+
+@media (min-width: 768px){
+  header {
+    justify-content: start;
+  }
+}
+
+header .profile-photo{
+  margin: 20px;
+}
+
+header .profile-photo img { 
+  border-radius: 50%; 
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  header .profile-photo {
+    margin: 0 50px 0 30px;
+  }
+}
+
+header .about-me {
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  header .about-me {
+    margin: 0;
+  }
+}
+
+header .about-me h1 {
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+@media (min-width: 768px) {
+  header .about-me h1 {
+    font-size: 33px;
+  }
+}
+
+header .about-me p {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+}
+
+.container { 
+  max-width: 992px; 
+  margin: 0 auto;
+}
+
+.item .photo_details {
+  background-color: #ffff;
+  padding: 13px;
+}
+
+.item .photo_details span {
+  font-size: 12px;
+}
+
+.item .photo_details img {
+  width: 30px;
+  height: 26px;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+footer{
+  font-family: 'Gayathri', sans-serif;
+  font-size: 18px;
+}
+
+footer{
+  text-align: center;
+}
