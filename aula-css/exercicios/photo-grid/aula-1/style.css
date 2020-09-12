@@ -63,13 +63,15 @@ header .about-me p {
   font-size: 16px;
 }
 
-.container {
-  display: flex;
-}
-
 .container { 
   max-width: 992px; 
   margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .item .photo_details {
@@ -78,7 +80,7 @@ header .about-me p {
 }
 
 .item .photo_details span {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .item .photo_details img {
@@ -88,11 +90,11 @@ header .about-me p {
   vertical-align: bottom;
 }
 
-footer{
+footer p {
   font-family: 'Gayathri', sans-serif;
   font-size: 18px;
 }
 
-footer{
+footer p {
   text-align: center;
 }
