@@ -72,11 +72,37 @@ header .about-me p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .item .photo_details {
   background-color: #ffff;
   padding: 13px;
+  width: 100%;
+}
+
+.item {
+  padding: 20px;
+  width: 30%;
+}
+
+.item img {
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+  width: 100%;
+}
+
+.item {  
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, .4); 
+  cursor: pointer;
+  flex-direction: column; 
+  margin: 15px;  
+  transition: transform 0.3s ease-in-out; 
+}
+
+.item:hover { 
+  transform: scale(1.05);
 }
 
 .item .photo_details span {
@@ -84,8 +110,8 @@ header .about-me p {
 }
 
 .item .photo_details img {
-  width: 30px;
-  height: 26px;
+  width: 31px;
+  height: 31px;
   margin-right: 10px;
   vertical-align: bottom;
 }
@@ -93,8 +119,9 @@ header .about-me p {
 footer p {
   font-family: 'Gayathri', sans-serif;
   font-size: 18px;
+  text-align: center;
 }
 
-footer p {
-  text-align: center;
+footer {
+  padding-top: 13px;
 }
