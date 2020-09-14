@@ -29,23 +29,18 @@ header .profile-photo{
 
 header .profile-photo img { 
   border-radius: 50%; 
-  width: 100%;
+  width: 97px;
 }
 
 @media (min-width: 768px) {
-  header .profile-photo {
+  header .profile-photo img {
+    width: 160px;
     margin: 0 50px 0 30px;
   }
 }
 
 header .about-me {
-  margin: 10px;
-}
-
-@media (min-width: 768px) {
-  header .about-me {
-    margin: 0;
-  }
+  margin: auto 0;
 }
 
 header .about-me h1 {
@@ -83,7 +78,14 @@ header .about-me p {
 
 .item {
   padding: 20px;
-  width: 30%;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .item {
+    width: 30%;
+    padding: 20px;
+  }
 }
 
 .item img {
@@ -120,8 +122,9 @@ footer p {
   font-family: 'Gayathri', sans-serif;
   font-size: 18px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 footer {
-  padding-top: 13px;
+  margin: 13px;
 }
