@@ -3,6 +3,92 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-p {
+.photo-grid {
+  padding: 0 5%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.button {
+  font-size: 20px;
+}
+
+.profile-details {
   background-color: white;
+  padding: 20px 0 ;
+  display: flex;
+  width: 100%;
+}
+
+.profile-details img {
+  padding-left: 10px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.profile-details span {
+  margin: auto 0;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .profile-details {
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    grid-area: 1/2;
+    width: 100%;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-auto-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    justify-content: flex-end;
+  }
+}
+
+.photo {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .photo {
+    grid-row: span 2;
+    width: 100%;
+  }
+}
+
+.photo img{
+  height: 250px;
+  width: 100%;
+}
+
+.photo-details {
+  background-color: white;
+  padding: 13px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .photo-details {
+    grid-area: 2/2;
+  background-color: white;
+  padding: 13px;
+  width: 100%;
+  }
 }
