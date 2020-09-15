@@ -7,12 +7,26 @@ body {
   padding: 0 5%;
 }
 
+@media (min-width: 768px) {
+  .photo-grid {
+    padding: 0 20%;
+  }
+}
+
+
 header h1 {
   text-align: center;
 }
 
 header a {
+  color: black;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 33px;
+  }
 }
 
 .button {
@@ -32,6 +46,14 @@ header a {
   border-radius: 50%;
 }
 
+@media (min-width: 768px) {
+  .profile-details img {
+    height: 57px;
+    width: 56px;
+    clip-path: circle(45% at 56% 49%);
+  }
+}
+
 .profile-details span {
   margin: auto 0;
   padding: 0 20px;
@@ -42,8 +64,9 @@ header a {
     background-color: white;
     padding: 20px 0;
     display: flex;
-    grid-area: 1/2;
     width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 2;
   }
 }
 
@@ -55,40 +78,44 @@ header a {
 
 @media (min-width: 768px) {
   .grid {
-    grid-auto-rows: 1fr 1fr;
+    grid-auto-rows: 100px;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    justify-content: flex-end;
   }
 }
 
 .photo {
   width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
   .photo {
-    grid-row: span 2;
     width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 6;
   }
 }
 
 .photo img{
-  height: 250px;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
+  height: 100%;
 }
 
 .photo-details {
   background-color: white;
-  padding: 13px;
   width: 100%;
 }
 
 @media (min-width: 768px) {
   .photo-details {
-    grid-area: 2/2;
-  background-color: white;
-  padding: 13px;
-  width: 100%;
+    background-color: white;
+    width: 100%;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 6;
   }
 }
