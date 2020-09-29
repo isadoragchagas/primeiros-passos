@@ -1,0 +1,16 @@
+.formulario {
+  text-align: center;
+}
+
+#n1, #n2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.botao {
+  padding: 0.5em;
+}

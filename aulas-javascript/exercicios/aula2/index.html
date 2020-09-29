@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 2 JavaScript</title>
+  </head>
+  <body>
+    <section class="formulario">
+
+      <form id="myForm">
+        <fieldset>
+          <div>
+            <label for="primeironumero">Número 1</label>
+            <input placeholder="Insira o primeiro número" type="number" id="number1" />
+          </div>
+
+          <div>
+            <label for="segundonumero">Número 2</label>
+            <input placeholder="Insira o segundo número" type="number" id="number2" />
+          </div>
+
+          <div class="botao"> 
+            <button onclick="saoDiferentes()" type="button">Checar se são diferentes</button>
+            <button onclick="resetar()" type="button">Resetar</button>
+          </div>
+        </fieldset>
+      </form>
+
+    </section>
+
+    <script src="script.js" defer ></script>
+  </body>
+</html>
